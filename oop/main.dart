@@ -1,11 +1,18 @@
 import 'livro.dart';
 
 void main(List<String> arguments) {
-  Livro livroDart = Livro();
+  Livro livro1 = Livro();
+  Livro livro2 = Livro();
 
-  livroDart.lerDetalhes();
-  livroDart.mostraDetalhes();
+  livro1.lerDetalhes();
+  livro1.mostraDetalhes();
 
-  livroDart.aplicarDesconto(0.2);
-  print(livroDart.valor);
+  livro2.lerDetalhes();
+  livro2.mostraDetalhes();
+
+  if (livro2 == livro1) {
+    print("Iguais");
+  } else {
+    print("False");
+  }
 }

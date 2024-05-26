@@ -24,7 +24,8 @@ class Livro {
     descricao = stdin.readLineSync()!;
   }
 
-  void aplicarDesconto(double porcentagem) {
+  String aplicarDesconto(double porcentagem) {
     this.valor -= this.valor * porcentagem;
+    return "Novo desconto aplicado, valor ${this.valor}";
   }
 }
